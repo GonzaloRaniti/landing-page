@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-    --background: #1e2027;
+    --background: #1e2326;
     --primary: #1e50ff;
     --secondary: #272d37;
     --btn-bg: #050d26;
@@ -16,7 +16,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Righteous';
+    /* font-family: 'Righteous'; */
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 
@@ -51,10 +55,89 @@ header{
     color: var(--bg-white);
     font-size: 12px;
     text-decoration: none;
+    font-family: 'Righteous' ;
 }
 
 .logo{
-    height: 45px;
+    height: 55px;
     border-radius: 50px;
     cursor: pointer;
+}
+
+/* MAIN */
+
+main{
+    background: var(--background);
+    padding-top: 170px;
+}
+
+#hero {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 80%; 
+    margin: 0 auto; 
+}
+
+.info-hero {
+    flex: 1; 
+    text-align: left; 
+}
+
+.info-hero h1 {
+    font-family: 'Righteous';
+    font-size: 80px;
+    text-align: start;
+    background: linear-gradient(to top, blue, orange);
+    color: transparent;
+    background-clip: text;
+    margin-bottom: 20px;
+}
+
+.info-hero p{
+    margin: 0 20px 20px 0;
+    text-align: justify;
+    font-family: Work Sans;
+    font-size: 20px;
+    color: var(--bg-white);
+}
+
+.btn {
+    background: var(--secondary);
+    color: var(--bg-white);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+
+.img-portada img {
+    width: 100%; 
+    max-width: 400px; 
+    height: auto; 
+    border-radius: 60px;
+} 
+
+/* NOSOTROS */
+.nosotros h2{
+    font-family: Righteous;
+    color: var(--bg-electric);
+    font-size: 5rem;
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+.nosotros p {
+    font-family: Work Sans;
+    font-size: 20px;
+    text-align: justify;
+    margin: 20px 20px;
+    color: var(--bg-white);
+    font-weight: 800;
+    line-height: 1.6;
+    
 }
