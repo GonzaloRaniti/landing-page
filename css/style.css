@@ -2,7 +2,7 @@
 
 :root{
     --background: #1e2326;
-    --primary: #1e50ff;
+    --primary: #f7aa03;
     --secondary: #272d37;
     --btn-bg: #050d26;
     --bg-azul-10: #e9eeff;
@@ -21,11 +21,12 @@
 
 html{
     scroll-behavior: smooth;
+    scroll-padding-top: 70px;
 }
 
 
 header{
-    background: var(--background);
+    background: var(--secondary);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,7 +45,13 @@ header{
 }
 
 .navbar{
-    gap: 500px; 
+    gap: 100px; 
+}
+
+.navbar img{
+    width: 30px;
+    color: var(--bg-electric);
+    cursor: pointer;
 }
 
 .navbar-list{
@@ -53,14 +60,26 @@ header{
 
 .navbar-list a{
     color: var(--bg-white);
-    font-size: 12px;
+    font-size: 16px;
     text-decoration: none;
     font-family: 'Righteous' ;
+
+    &:hover{
+        color: var(--primary);
+    }
 }
 
 .logo{
     height: 55px;
     border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.cart-icon{
+    height: 30px;
+    padding: 5px 10px;
+    color: var(--bg-white);
     cursor: pointer;
 }
 
@@ -77,6 +96,8 @@ main{
     align-items: center; 
     width: 80%; 
     margin: 0 auto; 
+    gap: 40px;
+    
 }
 
 .info-hero {
@@ -93,6 +114,7 @@ main{
     background-clip: text;
     margin-bottom: 20px;
 }
+
 
 .info-hero p{
     margin: 0 20px 20px 0;
@@ -117,7 +139,7 @@ main{
 
 .img-portada img {
     width: 100%; 
-    max-width: 400px; 
+    max-width: 600px; 
     height: auto; 
     border-radius: 60px;
 } 
@@ -128,7 +150,7 @@ main{
     color: var(--bg-electric);
     font-size: 5rem;
     text-align: center;
-    margin: 90px 0 30px 0;
+    margin: 150px 0 100px 0;
 }
 
 .nosotros p {
@@ -137,7 +159,98 @@ main{
     text-align: justify;
     margin: 20px 20px;
     color: var(--bg-white);
-    font-weight: 800;
+    font-weight: 500;
     line-height: 1.6;
     
+}
+
+/* MENÚ */
+#menu{
+    margin-top: 130px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#menu h2{
+    font-family: 'Righteous';
+    font-size: 3rem;
+    color: var(--bg-white);
+    margin-bottom: 40px;
+}
+
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 150px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background: var(--background);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(241, 199, 8, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.5s ease;
+}
+
+.card:hover {
+    transform:  translateY(-10px);
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 15px;
+}
+
+.card h3{
+    font-family: 'Righteous';
+    font-size: 1.5rem;
+    color: var(--bg-white);
+    margin-bottom: 10px;
+}
+
+.card p{
+    font-family: 'Work Sans';
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--bg-white);
+    margin-bottom: 15px;
+}
+
+.card .price {
+    font-family: 'Work Sans';
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.add-to-cart{
+    margin-top: auto;
+    background-color: var(--primary);
+    color: var(--bg-white);
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Work Sans';
+    background-image: linear-gradient(to right, var(--primary) 50%, var(--secondary) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 2s ease;
+}
+
+.add-to-cart:hover  {
+    background-position: left bottom;
+    color: var(--btn-bg);
 }
