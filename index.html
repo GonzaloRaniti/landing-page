@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mediasqueries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Lo de Gonza - Resto</title>
 </head>
@@ -13,11 +14,16 @@
         
 
         <nav class="navbar">
+
+            <label for="menu-hamburguesa" class="menu-hamb">
+                <img src="./image/menu-hamburguesa.png" alt="">
+            </label>
+            <input type="checkbox" id="menu-hamburguesa">
             <ul class="navbar-list">
                 <li><a href="#hero">Inicio</a></li>
                 <li><a href="#nosotros">Quienes Somos</a></li>
                 <li><a href="#menu">Menú</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
             <!-- <img src="./image/carrito.png" alt="carrito compras"> -->
             <i class="fa-solid fa-cart-shopping cart-icon"></i>
@@ -73,6 +79,27 @@
                 </div>
             </div>
          </section>
+
+         <section id="contact">
+            <div class="contact-container">
+                <h2>¡Contactanos!</h2>
+                <div class="contact-info">
+                    <div class="info">
+                        <h3>Office Location</h3>
+                        <p>Jupiter, Australia</p>
+                        <p>Email: lodegonza@gmail.com</p>
+                        Teléfono: +54 123456789
+                    </div>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105267.180832454!2d-58.65176705664062!3d-34.462315600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb1d2c7266c11%3A0x397de65d601309ab!2sLo%20De%20Facu!5e0!3m2!1ses-419!2sar!4v1725577856282!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <footer class="footer">
+            <p>© Derechos reservados -- LO DE GONZA</p>
+         </footer>
     </main>
 
 </body>
