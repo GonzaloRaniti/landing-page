@@ -25,6 +25,8 @@
         font-size: 20px;
     }
 
+
+    /* Menu hamburguesa */
     .menu-hamb{
         display: flex;
         cursor: pointer;
@@ -74,5 +76,49 @@
 .contact-info{
     flex-direction: column;
 }
+
+
+.card {
+    width: 50%;
+}
+
+}
+
+
+@media (max-width: 576px) {
+
+
+    .navbar-list a{
+        font-size: 1rem;
+       }
+
+    .info-hero p{
+        font-family: Righteous;
+        font-size: 1.2rem;
+    }   
+
+
+   .card{
+    width: 80%;
+   }
+
+   .nosotros h2{
+    font-size: 5rem;
+   }
+
+   .nosotros p{
+    font-family: Righteous;
+    font-size: 1rem;
+   }
+
+   .social-icons {
+    justify-content: center;
+   }
+
+   .social-icons i {
+    font-size: 20px;
+    margin: 10px 10px;
+   }
+
 
 }
